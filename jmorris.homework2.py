@@ -7,12 +7,19 @@ SoftDes
 Julian Morris
 Homework 2 
 
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 29 09:38:52 2014
+
+@author: julian
+"""
 
 """HW 2 Exercise 2.4"""
 
 """part 1"""
 """The volume of a sphere with radius r is 4/3 π r3.
-What is the volume of a sphere with radius 5?"""
+What is the volume of a sphere with radius 5?
+"""
 
 import math
 
@@ -32,6 +39,7 @@ e=c+3+59*(c+0.75)
 
 print "$"+str(e)
 
+
 """part 3"""
 """If I leave my house at 6:52 am and 
 run 1 mile at an easy pace (8:15 per mile), 
@@ -48,6 +56,10 @@ minutes=(52*min)+runtime
 total=((6*h)+minutes)
 
 print total
+
+"""
+I couldn't figure out how to make the times in a neater format, so I decided not to use unum
+"""
 
 """
 without using unum
@@ -164,6 +176,7 @@ def check_input():
     
 
 check_input()
+    
 
 """
 Exercise 6.1. Write a compare function that returns 1 if x>y,
@@ -178,4 +191,5 @@ def compare(x,y):
     elif x<y:
         return -1
     
-print compare(2,2)
+print compare(2,2)  
+    

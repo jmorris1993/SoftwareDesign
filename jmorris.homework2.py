@@ -30,7 +30,7 @@ What is the total wholesale cost for 60 copies?"""
 c=24.95*0.6
 e=c+3+59*(c+0.75)
 
-print e
+print "$"+str(e)
 
 """part 3"""
 """If I leave my house at 6:52 am and 
@@ -149,7 +149,7 @@ def check_fermat(a,b,c,n):
         else:
             print "No, that doesn't work."
         
-check_femat(2,3,4,5)
+check_fermat(2,3,4,5)
 
 """
 Exercise 5.3 part 2

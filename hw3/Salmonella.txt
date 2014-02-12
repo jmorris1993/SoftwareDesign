@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb  9 20:45:53 2014
+
+@author: julian
+"""
+
+surface presentation of antigens 
+[Salmonella enterica subsp. enterica serovar Typhimurium]	
+ 573	 573	100%	0.0	100%	CAA51921.1

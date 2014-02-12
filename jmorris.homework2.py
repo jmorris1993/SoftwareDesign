@@ -7,12 +7,19 @@ SoftDes
 Julian Morris
 Homework 2 
 
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 29 09:38:52 2014
+
+@author: julian
+"""
 
 """HW 2 Exercise 2.4"""
 
 """part 1"""
 """The volume of a sphere with radius r is 4/3 π r3.
-What is the volume of a sphere with radius 5?"""
+What is the volume of a sphere with radius 5?
+"""
 
 import math
 
@@ -30,7 +37,8 @@ What is the total wholesale cost for 60 copies?"""
 c=24.95*0.6
 e=c+3+59*(c+0.75)
 
-print e
+print "$"+str(e)
+
 
 """part 3"""
 """If I leave my house at 6:52 am and 
@@ -48,6 +56,10 @@ minutes=(52*min)+runtime
 total=((6*h)+minutes)
 
 print total
+
+"""
+I couldn't figure out how to make the times in a neater format, so I decided not to use unum
+"""
 
 """
 without using unum
@@ -149,7 +161,7 @@ def check_fermat(a,b,c,n):
         else:
             print "No, that doesn't work."
         
-check_femat(2,3,4,5)
+check_fermat(2,3,4,5)
 
 """
 Exercise 5.3 part 2
@@ -164,6 +176,7 @@ def check_input():
     
 
 check_input()
+    
 
 """
 Exercise 6.1. Write a compare function that returns 1 if x>y,
@@ -178,4 +191,5 @@ def compare(x,y):
     elif x<y:
         return -1
     
-print compare(2,2)
+print compare(2,2)  
+    

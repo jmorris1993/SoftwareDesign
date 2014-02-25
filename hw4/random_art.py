@@ -91,7 +91,7 @@ def finalimage(IMAGESIZE,mindepth,maxdepth):
     redfunc= build_random_function(mindepth,maxdepth)
     bluefunc= build_random_function(mindepth,maxdepth)
     greenfunc= build_random_function(mindepth,maxdepth)
-    im = Image.new("RGB",(IMAGESIZE,IMAGESIZE))
+    im = Image.new("RGB",(IMAGESIZE,IMAGESIZE))     # this assumes image is always a square; things like these might be worth putting in the docstring
     
     for x in range(0,IMAGESIZE):
         for y in range(0,IMAGESIZE):
@@ -104,7 +104,7 @@ def finalimage(IMAGESIZE,mindepth,maxdepth):
             green=remap_interval(g,-1,1,0,255)
             blue=remap_interval(b,-1,1,0,255)
             im.putpixel((x,y),(int(red),int(green),int(blue)))
-    im.save("./image"+str(time.time())+".bmp")
+    im.save("./image"+str(time.time())+".bmp")  # I was wondering why you had imported time. This is an excellent use of it. Kudos to you, Julian!
         
 finalimage(350,1,6)
 
